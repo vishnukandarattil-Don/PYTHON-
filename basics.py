@@ -6,3 +6,10 @@ area = print("Area=", 3.14*radius*radius, "sq units", 3.14*radius**2)
 length = int(input(" enter the length of the rectangle="))
 breadth = int(input("enter the breadth of the rectangle="))
 Area = print("Area of rectange=", length*breadth, "sq units")
+name = input("enter your name=")
+
+# Uage of type function
+print(type(radius))
+print(type(length))
+print(type(breadth))
+print(type(name))
