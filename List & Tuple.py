@@ -26,13 +26,38 @@ print(student[-3:-1])  # from -3 to -2
 
 # list methods
 list = [1, 2, 3, 4, 5]
-list.append(4)  # adds an element to the end of the list
+list.append(6)  # adds an element to the end of the list
 print(list)
 list.sort()
 print(list)
 list.reverse()  # reverses the list
 print(list)
-list.reverse()
-print(list)
 list.insert(2, 10)  # inserts 10 at index 2
 print(list)
+
+
+# TUPLES
+# tuples are immutable
+tuple1 = (1+2, 2, 3, 4, 5)
+# use parenthesis for tuples
+print(tuple1)
+print(type(tuple1))
+# task
+# WAP to ask the user enter 3 actor name and store in a list
+actor1 = input("enter actor 1 name=")
+actor2 = input("enter actor 2 name=")
+actor3 = input("enter actor 3 name=")
+actor = [actor1, actor2, actor3]
+print(actor)
+
+# task 2
+# WAP to check if a list contains a palindrome of elements
+userlist = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+print(userlist)
+plaindrome = userlist.copy()
+plaindrome.reverse()
+print(plaindrome)
+if userlist == plaindrome:
+    print("the list is a palindrome")
+else:
+    print("the list is not a palindrome")
